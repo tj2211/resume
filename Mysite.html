@@ -7,81 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, css, course, tags">
     <meta name="description" content="Это сайт Тимура">
+    <link rel="stylesheet" href="style.css">
     <title>Timur's site</title>
 </head>
 
 <body>
-    <img src="276016012_4821583537950004_5158102769120849099_n.jpg"
-        alt="" width="250">
-        <h1>Timur Jurabekov</h1>
-    <p>Ya uchus v <strong>magistrature</strong> na institute Andijanskom mashinastroitelnom institute
-        po napravleniyu <strong>Informatsionniye texnologii v ekonomike</strong></p>
-    <p>Ya rabotayu v samom prestijnem banke Uzbekistana, <em>Hamkorbank</em> </p>
+    <div class="container">
+        <div class="info">
+            <img src="276016012_4821583537950004_5158102769120849099_n.jpg" alt="" width="250">
+            <div class="info-text">
+                <h1>Timur Jurabekov</h1>
+                <p>Ya uchus v <strong>magistrature</strong> na institute Andijanskom mashinastroitelnom institute
+                    po napravleniyu <strong>Informatsionniye texnologii v ekonomike</strong></p>
+                <p>Ya rabotayu v samom prestijnem banke Uzbekistana, <em>Hamkorbank</em> </p>
 
-    <h4>Social networks</h4>
-    <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <h4>Social networks</h4>
+                <a href="#" >Instagram</a>
 
-    <a href="https://www.facebook.com/timur.jurabekov/" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Facebook</a>
 
-    <a href="https://telegram.org/" target="_blank">Telegram</a>
-
-    <h2>My hobbies</h2>
-    <ol>
-        <li>Computer</li>
-        <li>sport</li>
-        <li>study</li>
-        <li>travelling</li>
-    </ol>
-
-    <h2>Opyt raboty</h2>
-    <table width="500">
-        <thead>
-            <tr>
-                <th>Nazvaniya</th>
-                <th>Doljnost</th>
-                <th>God raboty</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Litsey</td>
-                <td>operator</td>
-                <td>2012-2014</td>
-            </tr>
-            <tr>
-                <td>Jurnal</td>
-                <td>designer</td>
-                <td>2014-2017</td>
-            </tr>
-            <tr>
-                <td>Gazeta</td>
-                <td>Verstalshik</td>
-                <td>2017-2019</td>
-            </tr>
-            <tr>
-                <td>Hamkorbank</td>
-                <td>Online konsultant</td>
-                <td>2020 - seychas</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Contact me</h2>
-    <form action="/">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="name">
+                <a href="#" target="_blank">Telegram</a>
+            </div>
+       </div>
+        <div class="card bg-yellow">
+            <h2>My hobbies</h2>
+            <ol class="list">
+                <li>Computer</li>
+                <li>sport</li>
+                <li>study</li>
+                <li>travelling</li>
+            </ol>
         </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="email">
+        <div class="card bg-red">
+            <h2>Opyt raboty</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Nazvaniya</th>
+                        <th>Doljnost</th>
+                        <th>God raboty</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Litsey</td>
+                        <td>operator</td>
+                        <td>2012-2014</td>
+                    </tr>
+                    <tr>
+                        <td>Jurnal</td>
+                        <td>designer</td>
+                        <td>2014-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Gazeta</td>
+                        <td>Verstalshik</td>
+                        <td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Hamkorbank</td>
+                        <td>Online konsultant</td>
+                        <td>2020 - seychas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+        <div class="card bg-blue">
+            <h2>My courses</h2>
+            <ul class="link-list">
+                <li><a href="https:google.com" target="_blank">google</a></li>
+                <li><a href="https:yandex.ru" target="_blank">yandex</a></li>
+            </ul>
+                    
         </div>
-        <div>
-            <label for="textarea">Your text:</label>
-            <br>
-            <textarea name="" id="textarea" cols="30" rows="10" placeholder="Your text"></textarea>
-        </div>
-        <button type="submit">Send</button>
-    </form>
+        <div class="ccc"></div>
+            <form action="/" class="form">
+                <h2>Contact me</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                </div>    
+                <div class="form-group">
+                    <label for="textarea">Your text:</label>
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Your text"></textarea>
+                </div>        
+                    
+                <button type="text" class="btn">Send</button>
+            </form>
+    </div>
 </body>
 
 </html>
